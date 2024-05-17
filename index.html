@@ -107,6 +107,7 @@
             .catch(error => console.error('Fehler beim Laden der CSV-Datei:', error));
 
         function showVehicle(vehicle, details) {
+            console.log("Details:", details);
             var detailsDiv = document.getElementById('vehicle-details');
             var titleElement = document.getElementById('vehicle-title');
             var contentElement = document.getElementById('vehicle-content');
