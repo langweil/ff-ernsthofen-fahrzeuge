@@ -60,51 +60,37 @@
     <header>
         <h1>FF ERNSTHOFEN</h1>
     </header>
-    <div class="container">
-        <div class="vehicle-list">
-            <div class="vehicle" onclick="showVehicle('HLF 3 - RÜSTLÖSCH')">HLF 3 - RÜSTLÖSCH</div>
-            <div class="vehicle" onclick="showVehicle('HLF 2 - TANK')">HLF 2 - TANK</div>
-        </div>
-        <div id="vehicle-details" class="details" style="display: none;">
-            <h2 id="vehicle-title"></h2>
-            <div id="vehicle-content">
-                <!-- Hier werden die Fahrzeugdetails angezeigt -->
-            </div>
-        </div>
-    </div>
 
     <script>
+        // Lese die CSV-Datei ein
         // Lese die CSV-Datei ein
         fetch('fahrzeuge.csv')
             .then(response => response.text())
             .then(data => {
                 // Verarbeite die CSV-Daten
                 var lines = data.split('\n');
-                var vehicles = {};
+                var vehicleList = document.querySelector('.vehicle-list');
                 for (var i = 1; i < lines.length; i++) {
                     var parts = lines[i].split(';');
                     var vehicle = parts[0];
-                    var room = parts[1];
-                    var equipment = parts[2];
-                    var image = parts[3];
-                    if (!vehicles[vehicle]) {
-                        vehicles[vehicle] = [];
-                    }
-                    vehicles[vehicle].push({ room: room, equipment: equipment, image: image });
-                }
-                // Erstelle die Fahrzeug-Liste
-                var vehicleList = document.querySelector('.vehicle-list');
-                Object.keys(vehicles).forEach(vehicle => {
+                    // Erstelle eine Fahrzeugkachel für jedes Fahrzeug in der CSV-Datei
                     var vehicleDiv = document.createElement('div');
                     vehicleDiv.classList.add('vehicle');
                     vehicleDiv.textContent = vehicle;
                     vehicleDiv.addEventListener('click', function () {
-                        showVehicle(vehicle, vehicles[vehicle]);
+                        showVehicle(vehicle);
                     });
                     vehicleList.appendChild(vehicleDiv);
-                });
+                }
             })
             .catch(error => console.error('Fehler beim Laden der CSV-Datei:', error));
+
+        function showVehicle(vehicle) {
+            // Hier kannst du die Logik für das Anzeigen der Fahrzeugdetails implementieren
+            console.log('Fahrzeug ausgewählt:', vehicle);
+            // Hier könntest du beispielsweise den HTML-Inhalt für die Fahrzeugdetails aktualisieren
+        }
+
 
         function showVehicle(vehicle, details) {
             var detailsDiv = document.getElementById('vehicle-details');
