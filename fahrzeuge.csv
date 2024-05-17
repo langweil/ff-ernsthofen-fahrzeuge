@@ -1,7 +1,7 @@
 fahrzeug;geraeteraum;geraet;bild
-HLF 3 - RÜSTLÖSCH;GR1;B-Schlauch;bschlauch.jpg
-HLF 3 - RÜSTLÖSCH;GR1;Verteiler;c-b-c_verteiler.png
-HLF3;GR2;Wasserwerfer;wasserwerfer.png
+HLF 3 - RÜSTLÖSCH;GR1;B-Schlauch;img/bschlauch.jpg
+HLF 3 - RÜSTLÖSCH;GR1;Verteiler;img/c-b-c_verteiler.png
+HLF3;GR2;Wasserwerfer;img/wasserwerfer.png
 HLF3;GR3;Atemschutzgerät;atemschutzgeraet.png
 HLF2;GR1;Rettungsschere;rettungsschere.png
 HLF2;GR2;Wärmebildkamera;waermebildkamera.png
