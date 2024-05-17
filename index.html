@@ -75,34 +75,36 @@
 
     <script>
         // Lese die CSV-Datei ein
-        // Lese die CSV-Datei ein
         fetch('fahrzeuge.csv')
             .then(response => response.text())
             .then(data => {
                 // Verarbeite die CSV-Daten
                 var lines = data.split('\n');
-                var vehicleList = document.querySelector('.vehicle-list');
+                var vehicles = {};
                 for (var i = 1; i < lines.length; i++) {
                     var parts = lines[i].split(';');
                     var vehicle = parts[0];
-                    // Erstelle eine Fahrzeugkachel für jedes Fahrzeug in der CSV-Datei
+                    var room = parts[1];
+                    var equipment = parts[2];
+                    var image = parts[3];
+                    if (!vehicles[vehicle]) {
+                        vehicles[vehicle] = [];
+                    }
+                    vehicles[vehicle].push({ room: room, equipment: equipment, image: image });
+                }
+                // Erstelle die Fahrzeug-Liste
+                var vehicleList = document.querySelector('.vehicle-list');
+                Object.keys(vehicles).forEach(vehicle => {
                     var vehicleDiv = document.createElement('div');
                     vehicleDiv.classList.add('vehicle');
                     vehicleDiv.textContent = vehicle;
                     vehicleDiv.addEventListener('click', function () {
-                        showVehicle(vehicle);
+                        showVehicle(vehicle, vehicles[vehicle]);
                     });
                     vehicleList.appendChild(vehicleDiv);
-                }
+                });
             })
             .catch(error => console.error('Fehler beim Laden der CSV-Datei:', error));
-
-        function showVehicle(vehicle) {
-            // Hier kannst du die Logik für das Anzeigen der Fahrzeugdetails implementieren
-            console.log('Fahrzeug ausgewählt:', vehicle);
-            // Hier könntest du beispielsweise den HTML-Inhalt für die Fahrzeugdetails aktualisieren
-        }
-
 
         function showVehicle(vehicle, details) {
             var detailsDiv = document.getElementById('vehicle-details');
