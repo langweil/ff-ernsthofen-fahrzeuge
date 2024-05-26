@@ -1,0 +1,220 @@
+body {
+    font-family: 'Courier New';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #B61414;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+.back-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.back-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+.vehicle-list, .device-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.vehicle-card, .device-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    width: calc(33% - 2rem); /* Drei Karten nebeneinander, mit etwas Abstand */
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vehicle-card:hover, .device-card:hover {
+    background-color: #ddd;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 0;
+    /*padding-top: 56.25%; /* 16:9 Aspect Ratio (Verhältnis von Breite zu Höhe) */
+    padding-top: 75%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+.device-image {
+    width: 100%;
+    height: 0;
+    /*padding-top: 56.25%; /* 16:9 Aspect Ratio (Verhältnis von Breite zu Höhe) */
+    padding-top: 75%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.vehicle-card h2, .device-card h2 {
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+
+.vehicle-card p, .device-card p {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.device-card .device-longdesc {
+    margin: 0.5rem 0;
+}
+
+.device-card .device-details {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .vehicle-card, .device-card {
+        width: calc(50% - 2rem); /* Zwei Karten nebeneinander auf mittelgroßen Bildschirmen */
+    }
+}
+
+@media (max-width: 480px) {
+    .vehicle-card, .device-card {
+        width: calc(100% - 2rem); /* Eine Karte pro Zeile auf kleinen Bildschirmen */
+    }
+}
+
+.device-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-content {
+    text-align: left;
+}
+
+.detail-image {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+.detail-image-gr {
+    width: 100%;
+    height: 0;
+    padding-top:170%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.detail-content h2 {
+    margin-top: 0;
+}
+
+.detail-content p {
+    margin-bottom: 15px;
+}
+.detail-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Platz zwischen den beiden Blöcken */
+}
+
+.detail-left {
+    flex: 1; /* Flexbox: Linker Block nimmt den verfügbaren Platz ein */
+    margin-right: 20px; /* Abstand zwischen den beiden Blöcken */
+}
+
+.detail-right {
+    flex: 1; /* Flexbox: Rechter Block nimmt den verfügbaren Platz ein */
+}
+/* Tabellenelemente immer oben ausrichten */
+td {
+    vertical-align: top;
+    padding: 3px;
+}
+.filter-bar {
+    height: 250px;
+    overflow: auto;
+    width: 100%;
+
+}
+.filter-bar select {
+    width: 100%; /* Volle Breite für das Dropdown-Menü */
+    height: 50px; /* Höhe des Dropdown-Menüs */
+    font-size: 16px; /* Schriftgröße */
+    padding: 10px; /* Innenabstand */
+    border-radius: 4px; /* Randradius */
+    background-color: #fff; /* Hintergrundfarbe */
+    margin-bottom: 10px; /* Abstand nach unten */
+    box-sizing: border-box;
+}
+/* Breite des Suchfeldes auf 100% setzen */
+.search {
+    width: 100%;
+    height: 50px; /* Beispielhöhe */
+    font-size: 16px; /* Beispiel-Schriftgröße */
+    padding: 10px; /* Beispiel-Innenabstand Text */
+    border: 1px solid #ddd; /* Beispiel-Rand */
+    border-radius: 4px; /* Beispiel-Randradius */
+    margin-bottom: 10px; /* Abstand nach unten */
+    box-sizing: border-box;
+}
+.spacing {
+    margin-bottom: 1rem; /* oder eine andere gewünschte Größe */
+}
+.transparent-hr {
+    border: 0;
+    height: 5px; /* Höhe der unsichtbaren Linie */
+    background-color: transparent;
+}
+.red-hr {
+    border: 0;
+    height: 3px; /* Dicke der Linie */
+    background-color: #B61414; /* Farbe der Linie */
+    margin: 20px 0;
+}
