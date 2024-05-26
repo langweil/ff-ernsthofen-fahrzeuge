@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailseite</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Geräte Details</h1>
+    </header>
+    <main>
+        <button class="back-button" onclick="history.back()">Zurück</button>
+    </main>
+    <main id="detail-content">
+        <!-- Hier werden die Detailinformationen eingefügt -->
+    </main>
+    <script>
+        // Funktion zum Laden der Detaildaten aus der entsprechenden CSV-Datei
+        async function loadDetailData(name, csvText) {
+            const detailData = parseCSV(csvText);
+            displayDetailData(detailData, name);
+        }
+
+        // Funktion zum Parsen der CSV-Datei
+        function parseCSV(text) {
+            const lines = text.trim().split('\n');
+            const headers = lines[0].split(',');
+            const detailData = {};
+            headers.forEach(header => {
+                detailData[header.trim()] = [];
+            });
+            lines.slice(1).forEach(line => {
+                const data = line.split(',');
+                headers.forEach((header, index) => {
+                    detailData[header.trim()].push(data[index].trim());
+                });
+            });
+            return detailData;
+        }
+
+        function displayDetailData(detailData, name) {
+            const detailContent = document.getElementById('detail-content');
+            const index = detailData['Gerätename'].indexOf(name);
+            if (index !== -1) {
+                const detailHTML = `
+                <div class="detail-left">
+                    <h2>${detailData['Gerätename'][index]}</h2>
+                    <table>
+                        <tr>
+                            <td><strong>Langbezeichnung:</strong></td>
+                            <td>${detailData['Langbezeichnung'][index]}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Details:</strong></td>
+                            <td>${detailData['Details'][index]}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <hr class="transparent-hr">
+                <div class="detail-image" style="background-image: url(${detailData['Bild'][index]});"></div>
+                <hr class="red-hr">
+                <div class="detail-right">
+                    <h2>Geräteraum Übersicht</h2>
+                    <table>
+                        ${detailData['GeräteraumDetails'] && detailData['GeräteraumDetails'][index] ? `
+                            <tr>
+                                <td><strong>Position:</strong> </td>
+                                <td>${detailData['Geräteraum'][index]}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notiz:</strong></td>
+                                <td>${detailData['GeräteraumDetails'][index]}</td>
+                            </tr>
+                        ` : 'Fehler'}
+                    </table>
+                </div>
+                <hr class="transparent-hr">
+                <div class="detail-image-gr" style="background-image: url(${detailData['GeräteraumBild'][index]});"></div>
+        `;
+                detailContent.innerHTML = detailHTML;
+            } else {
+                detailContent.innerHTML = '<p>Detaildaten nicht gefunden</p>';
+            }
+        }
+
+
+        // Lesen der Parameter aus der URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const csvText = decodeURIComponent(urlParams.get('csv'));
+
+        // Laden der Detaildaten beim Laden der Seite
+        window.onload = function () {
+            loadDetailData(name, csvText);
+        };
+    </script>
+</body>
+
+</html>

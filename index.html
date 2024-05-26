@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feuerwehr Fahrzeuge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FAHRZEUGE - FF ERNSTHOFEN</h1>
+    </header>
+    <main>
+        <div id="vehicle-list" class="vehicle-list">
+            <!-- Fahrzeuge werden hier durch JavaScript eingefügt -->
+        </div>
+    </main>
+    <script>
+        // Liste der Fahrzeuge
+        const vehicles = [
+            {
+                name: "KDO 1",
+                description: "KOMMANDO 1 ERNSTHOFEN",
+                image: "images/kdo1.jpeg",
+                link: "vehicles/kdo1.html"
+            },
+            {
+                name: "KDO 2",
+                description: "KOMMANDO 2 ERNSTHOFEN",
+                image: "images/kdo2.jpg",
+                link: "vehicles/kdo2.html"
+            },
+            {
+                name: "KLF",
+                description: "PUMPE ERNSTHOFEN",
+                image: "images/klf.jpeg",
+                link: "vehicles/klf.html"
+            },
+            {
+                name: "HLFA-2",
+                description: "TANK ERNSTHOFEN",
+                image: "images/hlf2.jpeg",
+                link: "vehicles/hlf2.html"
+            },
+            {
+                name: "HLFA-3",
+                description: "RÜSTLÖSCH - ERNSTHOFEN",
+                image: "images/hlf3.jpeg",
+                link: "vehicles/hlf3.html"
+            }
+        ];
+
+        // Funktion zum Laden der Fahrzeuge und Hinzufügen zur Seite
+        function loadVehicles() {
+            const vehicleList = document.getElementById('vehicle-list');
+            vehicles.forEach(vehicle => {
+                const card = document.createElement('a');
+                card.classList.add('vehicle-card');
+                card.href = vehicle.link;
+                card.innerHTML = `
+                    <div class="vehicle-image" style="background-image: url(${vehicle.image});"></div>
+                    <h2>${vehicle.name}</h2>
+                    <p>${vehicle.description}</p>
+                `;
+                vehicleList.appendChild(card);
+            });
+        }
+
+        // Fahrzeuge beim Laden der Seite laden
+        window.onload = loadVehicles;
+    </script>
+</body>
+</html>
