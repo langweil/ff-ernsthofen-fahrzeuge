@@ -1,24 +1,193 @@
-Gerätename,Langbezeichnung,Details,Bild,Geräteraum,GeräteraumDetails,GeräteraumBild
-5KG Hammer,5KG Hammer,,,,,
-Bolzenschneider,Bolzenschneider,,,,,
-Besen klein,Besen klein,,,,,
-Spaten,Spaten,,,,,
-Hooligan-Tool,Hooligan-Tool,,,,,
-Schlegel 2KG,Schlegel 2KG,,,,,
-Hacke lang,Hacke lang,,,,,
-Hacke kurz,Hacke kurz,,,,,
-Feuerwehr-Axt,Feuerwehr-Axt,,,,,
-Brechstange lang,Brechstange lang,,,,,
-Brechstange kurz,Brechstange kurz,,,,,
-Kohlenschaufel,Kohlenschaufel,,,,,
-Saugheber,Saugheber,,,,,
-Müllschaufel,Müllschaufel,,,,,
-Kamintürschlüssel,Kamintürschlüssel,,,,,
-Sappel,Sappel,,,,,
-Schlauch Hebekissen 5m,Schlauch Hebekissen 5m - 2 Stück,,images/10mschlauch.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
-Hebekissen,Hebekissen,,images/hebekissen.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
-Steuerorgan Hebekissen,Steuerorgan Hebekissen,,images/hktasse.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
-Druckluftflasche für Hebekissen,Druckluftflasche für Hebekissen,,images/hktasse.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
-Absperrband,Absperrband,2 Stück Absperrband - jeweils 500m,images/absperrband.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
-Benzin Kanister,Benzin Kanister 10L,,images/benzin.jpg,Geräteraum 2,Boden links,images/GR2.jpg
-Diesel Kanister,Diesel Kanister 20L,,images/diesel.jpg,Geräteraum 2,Boden links,images/GR2.jpg
+Gerätename,Langbezeichnung,Details,Hersteller,Bild,Geräteraum,GeräteraumDetails,GeräteraumBild
+Feuerwehraxt,Feuerwehraxt,,,images/feuerwehraxt.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hacke klein,Hacke klein,,,images/axtklein.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hacke groß,Hacke groß,,,images/axtgroß.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Sappel,Sappel,,,images/sappel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hooligantool,Holligantool,,,images/hooligantool.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Bolzenschneider,Bolzenschneider,,,images/bolzenschneider.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Spaten,Spaten,,,images/spaten.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hammer 2kg,Hammer 2kg,,,images/hammer2kg.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hammer 5kg,Hammer 5kg,,,images/hammer5kg.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Saugheber,Saugheber,,,images/saugheber.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Mistschaufel,Mistschaufel,,,images/mistschaufel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Kohleschaufel,Kohleschaufel,,,images/kohleschaufel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rauchfangkehrer Schlüssel,Rauchfangkehrer Schlüssel,,,images/rauchfangkehrerschlüssel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Brechstange klein,Brechstange klein,,,images/brechstangeklein.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Brechstange groß,Brechstange groß,,,images/brechstangegroß.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Schachthacken,Schachthacken,,,images/schachthacken.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Besen klein,Besen klein,,,images/besenklein.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Hydraulisches Rettungsgerät,Hydraulisches Rettungsgerät,,,images/hydrogerät.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzbolzen Greifzug,Ersatzbolzen Greifzug,,,images/ersatzbolzen.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Gerüstklammern,Gerüstklammern,,,images/gerüstklammer.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Diverse Nägel,Diverse Nägel,,,images/nägel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Holz/Kunststoff Keile und Blöcke,Holz/Kunststoff Keile und Blöcke,,,images/keile.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Diverse Spax,Diverse Spax,,,images/spax.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Kette für Spreitzer,Kette für Spreitzer,,,images/hydrokette.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzzähne für Spreitzer,Ersatzzähne für Spreitzer,,,images/ersatzzähne.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzscheren für Schere,Ersatzscheren für Schere,,,images/ersatzscheren.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Motorkettensäge,Motorkettensäge,,,images/motorkettensäge.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rettungssäge,Rettungssäge,,,images/rettungssäge.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzketten für Motorsäge,Ersatzketten für Motorsäge,mehrere Ersatzketten,,images/ersatzketten.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzschwert,Ersatzschwert,,,images/ersatzschwert.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Stabfast,Stabfast,Länge:<br>Gewicht:<br>Max Belastung:</td><td>1.05 m<br>7.50 kg<br>1750 kg,Weber Rescue,images/stabfast.JPEG,Geräteraum 1,Ausklappfach seitlich,images/GR1.jpg
+Stabfast Hakenmesser,Stabfast Hakenmesser,Hackenmesser für Stabfast,Weber Rescue,images/stabfastmesser.JPEG,Geräteraum 1,Ausklappfach seitlich,images/GR1.jpg
+Stanleymesser,Stanleymesser,,,images/stanleymesser.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Kombikanister für Motokettensäge,Kombikanister für Motokettensäge,,,images/kombikanister.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Spanngurte,Spanngurte,,,images/spanngurt.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Zurrgurte,Zurrgurte,,,images/zurrgurt.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Spraydosen und Schmiermittel,Spraydosen und Schmiermittel,,,images/spraydosen.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Verlängerung Rettungszylinder,Verlängerung Rettungszylinder,,Weber Rescue,images/zylinderverlängerung.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rettungszylinder klein,Rettungszylinder klein,,Weber Rescue,images/zylinderklein.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rettungszylinder mittel,Rettungszylinder mittel,,Weber Rescue,images/zylindermittel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rettungszylinder groß,Rettungszylinder groß,,Weber Rescue,images/zylindergroß.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Bandschlingen,Bandschlingen,,,images/bandschlingen.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Rundschlinge 1m/1t,Rundschlinge 1m/1t,,,images/rundschlingelila.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Umlenkrolle groß,Umlenkrolle groß,,,images/umlenkrolle.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Werkzeugtrage,Werkzeugtrage,,,images/werkzeugtrage.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Schwellenaufsatz,Schwellenaufsatz,,,images/schwellenaufsatz.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Radkeile für KFZ,Radkeile für KFZ,,,images/radkeilkfz.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Mini Brechstange,Mini Brechstange,,,images/minibrechstange.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Gabelringschlüssel 10 und 13,Gabelringschlüssel 10 und 13,,,images/10und13schlüssel.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Elektro Werkzeugtrage,Elektro Werkzeugtrage,,,images/elektrowerkzeugtrage.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Milwaukee Akkus,Milwaukee Akkus,,,images/akkus.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Akku Schrauber,Akku Schrauber,,,images/akkuschrauber.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Akku Schlagschrauber,Akku Schlagschrauber,,,images/akkuschlagschrauber.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Akku Säbelsäge,Akku Säbelsäge,,,images/akkusäge.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Akku Winkelschleifer,Akku Winkelschleifer,,,images/akkuflex.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Schlüssel für Winkelschleifer,Schlüssel für Winkelschleifer,,,images/schlüsselflex.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Schutzbrille für Akku Geräte,Schutzbrille für Akku Geräte,,,images/schutzbrillen.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Bohrerkasette,Bohrerkasette,,,images/bohrerkasette.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Bitkasette,Bitkasette,,,images/bitkasette.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Ersatzblätter Säbelsäge,Ersatzblätter Säbelsäge,,,images/ersatzmesser.JPEG,Geräteraum 1,Ausklappfach Außen,images/GR1.jpg
+Dremel Multi,Dremel Multi,,,images/dremel.JPEG,Geräteraum 1,,images/GR1.jpg
+Zusatzarm Bohrmaschine,Zusatzarm Bohrmaschine,,,images/ersatzarm.JPEG,Geräteraum 1,,images/GR1.jpg
+Schlagnussensatz,Schlagnussensatz,,,images/nussensatz.JPEG,Geräteraum 1,,images/GR1.jpg
+Decke,Decke,,,images/decke.JPEG,Geräteraum 1,,images/GR1.jpg
+Plane für technische Geräte,Plane für technische Geräte,,,images/technischeplane.JPEG,Geräteraum 1,,images/GR1.jpg
+Kunststofffolie durchsichtig,Kunststofffolie durchsichtig,,,images/schutzfolie.JPEG,Geräteraum 1,,images/GR1.jpg
+Klebebandabroller,Klebebandabroller,,,images/klebebandabroller.JPEG,Geräteraum 1,Lade rechts,images/GR1.jpg
+Zubehör technischer Einsatz,Zubehör technischer Einsatz,,,images/technischeszubehörkiste.JPEG,Geräteraum 1,,images/GR1.jpg
+Kette 2 strängig 3m / 5.6t,Kette 2 strängig 3m / 5.6t,,,images/kette2str.JPEG,Geräteraum 1,,images/GR1.jpg
+Kette 1 strängig 3m / 4t,Kette 1 strängig 3m / 4t,,,images/kette1str.JPEG,Geräteraum 1,,images/GR1.jpg
+Kette 1 strängig 4m / 6.7t,Kette 1 strängig 4m / 6.7t,,,images/kette1str.JPEG,Geräteraum 1,,images/GR1.jpg
+Schäkel klein 8.5t,Schäkel klein 8.5t,,,images/schäkel1.JPEG,Geräteraum 1,,images/GR1.jpg
+Schäkel mittel 9.5t,Schäkel mittel 9.5t,,,images/schäkel1.JPEG,Geräteraum 1,,images/GR1.jpg
+Schäkel groß 17t,Schäkel groß 17t,,,images/schäkel1.JPEG,Geräteraum 1,,images/GR1.jpg
+Rangierroller,Rangierroller,,,images/rangierroller.JPEG,Geräteraum 1,,images/GR1.jpg
+Wagenheber,Wagenheber,,,images/wagenheber.JPEG,Geräteraum 1,,images/GR1.jpg
+Seilstropp 15m / 7.5t,Seilstropp 15m / 7.5t,,,images/seilstropp15.JPEG,Geräteraum 1,,images/GR1.jpg
+Greifzugseil 20m,Greifzugseil 20m,,,images/greifzugseil.JPEG,Geräteraum 1,,images/GR1.jpg
+Brechstange lang,Brechstange lang,,,images/brechstangelang.JPEG,Geräteraum 1,,images/GR1.jpg
+Nussensatz (groß),Nussensatz (groß),,,images/nussensatzgroß.JPEG,Geräteraum 1,,images/GR1.jpg
+Sperrwerkzeug,Sperrwerkzeug,,,images/sperrwerkzeug.JPEG,Geräteraum 1,,images/GR1.jpg
+Greifzug klein,Greifzug klein,,,images/greifzugklein.JPEG,Geräteraum 1,,images/GR1.jpg
+Freilandverankerung,Freilandverankerung,,,images/freilandverankerung.JPEG,Geräteraum 1,,images/GR1.jpg
+Anker Ziehgeräte,Anker Ziehgeräte,,,images/ankerzieher.JPEG,Geräteraum 1,,images/GR1.jpg
+Erdanker,Erdanker,,,images/erdanker.JPEG,Geräteraum 1,,images/GR1.jpg
+Rundschlinge braun 4m / 6t,Rundschlinge braun 4m / 6t,,,images/rundschlingebraun.JPEG,Geräteraum 1,,images/GR1.jpg
+Rundschlinge blau 6m / 8t,Rundschlinge blau 6m / 8t,,,images/rundschlingeblau.JPEG,Geräteraum 1,,images/GR1.jpg
+Unterbauholz klein,Unterbauholz klein,,,images/holz.JPEG,Geräteraum 1,,images/GR1.jpg
+Absturz Sicherungen,Absturz Sicherungen,,,images/absturzsicherung.JPEG,Geräteraum 1,,images/GR1.jpg
+Verbindungsseile lang,Verbindungsseile lang,,,images/verbindungsseil.JPEG,Geräteraum 1,,images/GR1.jpg
+Umlenkrollen klein,Umlenkrollen klein,,,images/umlenkrolleklein.JPEG,Geräteraum 1,,images/GR1.jpg
+Winde mit Umlenkrolle,Winde mit Umlenkrolle,,,images/boxwinde.JPEG,Geräteraum 1,,images/GR1.jpg
+Nass Schieber,Nass Schieber,,,images/nassschieber.JPEG,Geräteraum 1,,images/GR1.jpg
+Aluschaufel,Aluschaufel,,,images/aluschaufel.JPEG,Geräteraum 1,,images/GR1.jpg
+Stechschaufel,Stechschaufel,,,images/stechschaufel.JPEG,Geräteraum 1,,images/GR1.jpg
+Straßenbesen,Straßenbesen,,,images/straßenbesen.JPEG,Geräteraum 1,,images/GR1.jpg
+Dunghacke / Mistgabel gebogen,Dunghacke / Mistgabel gebogen,,,images/dunghacke.JPEG,Geräteraum 1,,images/GR1.jpg
+Schlauch Hebekissen 10m,Schlauch für Hebekissen,2 Stück<br>10m Länge<br>10bar max. Druck<br> 1x Gelb,,images/10mschlauch.jpg,Geräteraum 1,,images/GR1.jpg
+Hebekissen,Hebekissen Groß,,,images/hebekissen.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
+Steuerorgan Hebekissen,Steuerorgan Hebekissen,,,images/hktasse.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
+Druckluftflasche für Hebekissen,Druckluftflasche für Hebekissen,,,images/hktasse.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
+Absperrband,Absperrband,2 Stück Absperrband jeweils 500m,,images/absperrband.jpg,Geräteraum 2,Ausklappwand vorne,images/GR2.jpg
+Benzin Kanister,Benzin Kanister 10L,,,images/benzin.jpg,Geräteraum 2,Boden links,images/GR2.jpg
+Diesel Kanister,Diesel Kanister 20L,,,images/diesel.jpg,Geräteraum 2,Boden links,images/GR2.jpg
+B - Druckschlauch,B - Druckschlauch,,,images/bschlauch.JPEG,Geräteraum 3,unten,images/GR3.jpg
+C - Druckschlauch,C - Druckschlauch,,,images/cschlauch.JPEG,Geräteraum 3,unten,images/GR3.jpg
+Mini Kupplungsschlüssel,Mini Kupplungsschlüssel,,,images/minikupplungsschlüssel.JPEG,Geräteraum 3,Wand rechts,images/GR3.jpg
+Box mit Wolldecken,Box mit Wolldecken,,,images/wolldecke.JPEG,Geräteraum 3,Kiste mitte rechts,images/GR3.jpg
+Rettungsgurt,Rettungsgurt,,,images/rettungsgurt.JPEG,Geräteraum 3,Kiste unten rechts,images/GR3.jpg
+Dreickstuch,Dreickstuch,,,images/rettungsdreieck.JPEG,Geräteraum 3,Kiste unten rechts,images/GR3.jpg
+Tragetuch,Tragetuch,,,images/tragetuch.JPEG,Geräteraum 3,Kiste unten rechts,images/GR3.jpg
+Fußbrett für Korbtrage,Fußbrett für Korbtrage,,,images/fußbrett.JPEG,Geräteraum 3,Kiste unten mitte,images/GR3.jpg
+Spineboard Gurtsystem,Gurtsystem / Spinne Spineboard,,,images/spinne.JPEG,Geräteraum 3,Kiste unten mitte,images/GR3.jpg
+Gurt für Korbtrage,Gurt für Korbtrage,,,images/gurtkorbtrage.JPEG,Geräteraum 3,Kiste unten mitte,images/GR3.jpg
+Kernmantelseil,Kernmantelseil,,,images/kletterseil.JPEG,Geräteraum 3,Kiste unten mitte,images/GR3.jpg
+Arbeitsleine,Arbeitsleine,,,images/arbeitsleine.JPEG,Geräteraum 3,Kiste unten links,images/GR3.jpg
+Bindeleinen,Bindeleinen,,,images/bindeleinen.JPEG,Geräteraum 3,Kiste unten links,images/GR3.jpg
+Wathose,Wathose,,,images/wathose.JPEG,Geräteraum 3,Kiste mitte links,images/GR3.jpg
+Schnittschutzhose,Schnittschutzhose,,,images/schnittschutzhose.JPEG,Geräteraum 3,Kiste mitte mitte,images/GR3.jpg
+Forsthelm,Forsthelm,,,images/forsthelm.JPEG,Geräteraum 3,Kiste mitte mitte,images/GR3.jpg
+Box mit Müllsäcken,Box mit Müllsäcken,,,images/müllsäcke.JPEG,Geräteraum 3,Kiste oben rechts,images/GR3.jpg
+Klebebänder,Klebebänder,,,images/klebebänder.JPEG,Geräteraum 3,Kiste oben rechts,images/GR3.jpg
+Schwimmer Adapter 230V,Schwimmer Adapter 230V,,,images/schwimmer230.JPEG,Geräteraum 3,Kiste oben links,images/GR3.jpg
+Schlauchtragekorb,Schlauchtragekorb,,,images/tragekorb.jpg,Geräteraum 4,unten,images/GR4.jpg
+Rauchvorhang,Rauchvorhang,,,images/tragekorb.jpg,Geräteraum 4,unten,images/GR4.jpg
+Schlauchpaket,Schlauchpaket,,,images/nopic.svg,Geräteraum 4,unten links,images/GR4.jpg
+Reinigungsset Box,Reinigungsset Box,,,images/nopic.svg,Geräteraum 4,mittig,images/GR4.jpg
+Putztücher Box,Putztücher Box,,,images/nopic.svg,Geräteraum 4,mittig,images/GR4.jpg
+Hygieneboard,Hygieneboard,,,images/nopic.svg,Geräteraum 4,mittig,images/GR4.jpg
+Gummistiefel,Gummistiefel,,,images/stiefel.jpg,Geräteraum 4,oben rechts,images/GR4.jpg
+B - Schlauch,B - Schlauch,6 Paar Gummistiefel in unterschiedlichen Größen,,images/bschlauch.JPEG,Geräteraum 4,mittig,images/GR4.jpg
+B - Hohstrahlrohr,B - Hohstrahlrohr,,,images/brohr.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Hohstrahlrohr (klein),C - Hohstrahlrohr (klein),,,images/crohrklein.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Hohstrahlrohr (groß),C - Hohstrahlrohr (groß),,,images/crohrgroß.JPEG,Geräteraum 5,,images/GR5.jpg
+C-B-C Verteiler,C-B-C Verteiler,,,images/cbcverteiler.JPEG,Geräteraum 5,,images/GR5.jpg
+Übergangsstück A-B,Übergangsstück A-B,,,images/abübergang.JPEG,Geräteraum 5,,images/GR5.jpg
+Übergangsstück B-C,Übergangsstück B-C,,,images/cbübergang.JPEG,Geräteraum 5,,images/GR5.jpg
+Überflurhydrantenschlüssel,Überflurhydrantenschlüssel,,,images/hydrantenschlüssel.JPEG,Geräteraum 5,,images/GR5.jpg
+A-B-C Kupplungsschlüssel,A-B-C Kupplungsschlüssel,,,images/abcschlüssel.JPEG,Geräteraum 5,,images/GR5.jpg
+B - Schlauch (kurz),B - Schlauch (kurz),,,images/bschlauch.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Druckschlauch,C - Druckschlauch,,,images/cschlauch.JPEG,Geräteraum 5,,images/GR5.jpg
+Bioversal Fläschchen,Bioversal Fläschchen,,,images/bioversal.JPEG,Geräteraum 5,,images/GR5.jpg
+B - Absperrhahn,B - Absperrhahn,,,images/babsperrhahn.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Schaumrohr Aufsatz AWG,C - Schaumrohr Aufsatz AWG,,,images/schaumaufsatz.JPEG,Geräteraum 5,,images/GR5.jpg
+Schlauchhalter,Schlauchhalter,,,images/schlauchhalter.jpg,Geräteraum 5,,images/GR5.jpg
+C - Tauchpumpe (klein),C - Tauchpumpe (klein),,,images/tauchpumpeklein.JPEG,Geräteraum 5,,images/GR5.jpg
+Sammelstück A-B,Sammelstück A-B,,,images/absammelstück.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Rohrkrümmer (90 Grad),C - Rohrkrümmer (90 Grad),,,images/ckrümmer.JPEG,Geräteraum 5,,images/GR5.jpg
+B - Rohrkrümmer (90 Grad),B - Rohrkrümmer (90 Grad),,,images/bkrümmer.JPEG,Geräteraum 5,,images/GR5.jpg
+B - Druckbegrenzungsventil,B - Druckbegrenzungsventil,,,images/druckbegrenzer.JPEG,Geräteraum 5,,images/GR5.jpg
+Wasserwerfer,Wasserwerfer,,,images/wasserwerfer.JPEG,Geräteraum 5,,images/GR5.jpg
+Unterflurhydrantenschlüssel,Unterflurhydrantenschlüssel,,,images/unterflurhydrantenschlüssel.JPEG,Geräteraum 5,,images/GR5.jpg
+Tauchpumpe - Nautilus 6,Tauchpumpe - Nautilus 6,,,images/nautilus6.JPEG,Geräteraum 5,,images/GR5.jpg
+Tauchpumpe - Nautilus 8,Tauchpumpe - Nautilus 8,,,images/nautilus8.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Stützkrümmer,C - Stützkrümmer,,,images/cstützkrümmer.JPEG,Geräteraum 5,,images/GR5.jpg
+Südbahnwinde,Südbahnwinde,,,images/südbahnwinde.JPEG,Geräteraum 5,,images/GR5.jpg
+C - Hydroschild,C - Hydroschild,,,images/chydroschild.JPEG,Geräteraum 5,,images/GR5.jpg
+Schlagdorn,Schlagdorn,,,images/schlagdorn.JPEG,Geräteraum 5,,images/GR5.jpg
+Unterflurhydrant,Unterflurhydrant,,,images/unterflurhydrant.JPEG,Geräteraum 5,,images/GR5.jpg
+Schlauchbrücken Einfach,Schlauchbrücken Einfach,,,images/schlauchbrückeklein.JPEG,Geräteraum 5,,images/GR5.jpg
+Ölbindemittel Sack,Ölbindemittel Sack,,,images/ölbindemittel.JPEG,Geräteraum 5,,images/GR5.jpg
+Löschlanze für C - Hohlstrahlrohr,Löschlanze für C - Hohlstrahlrohr,,,images/löschlanze.JPEG,Geräteraum 5,,images/GR5.jpg
+Löscheimer,Löscheimer,,,images/löscheimer.JPEG,Geräteraum 5,,images/GR5.jpg
+Trichter,Trichter,,,images/trichter.JPEG,Geräteraum 5,,images/GR5.jpg
+Messbecher,Messbecher,,,images/messbecher.JPEG,Geräteraum 5,,images/GR5.jpg
+Auffangwanne,Auffangwanne,,,images/nopic.svg,Geräteraum 5,,images/GR5.jpg
+Verkehrsleitkegel,Verkehrsleitkegel,,,images/kegel.jpg,Geräteraum 6,,images/GR6.jpg
+Warnleuchten für Verkehrsleitkegel,Warnleuchten für Verkehrsleitkegel,,,images/ledklein.jpg,Geräteraum 6,,images/GR6.jpg
+Bioversal Spritze,Bioversal Spritze,,,images/biospritze.jpg,Geräteraum 6,,images/GR6.jpg
+Warndreieck Warnzeichen Feuerwehr,Warndreieck Warnzeichen Feuerwehr,,,images/dreieck.jpg,Geräteraum 6,,images/GR6.jpg
+Magnet Warnleuchten,Magnet Warnleuchten,,,images/ledmagnet.jpg,Geräteraum 6,,images/GR6.jpg
+C - Schlauch (kurz),C - Schlauch (kurz),,,images/ckurz.jpg,Geräteraum 6,,images/GR6.jpg
+C - Druckschlauch (30m),C - Druckschlauch (30m),,,images/cschlauch.JPEG,Geräteraum 6,,images/GR6.jpg
+C - Druckschlauch,C - Druckschlauch,,,images/cschlauch.JPEG,Geräteraum 6,,images/GR6.jpg
+Warnleuchten (groß),Warnleuchten (groß),,,images/ledgross.jpg,Geräteraum 6,,images/GR6.jpg
+B - Schnellangriffseinrichtung,B - Schnellangriffseinrichtung,,,images/bschnellangriff.JPEG,Geräteraum 6,,images/GR6.jpg
+Pulver Feuerlöscher (12kg),Pulver Feuerlöscher (12kg),,,images/pulver.jpg,Geräteraum 6,,images/GR6.jpg
+Bioversal Feuerlöscher (10kg),Bioversal Feuerlöscher (10kg),,,images/bioversal.jpg,Geräteraum 6,,images/GR6.jpg
+CO2 Feuerlöscher,CO2 Feuerlöscher,,,images/co2.jpg,Geräteraum 6,,images/GR6.jpg
+Kombi Schaumrohr,Kombi Schaumrohr,,,images/kombischaumrohr.JPEG,Geräteraum 6,,images/GR6.jpg
+Reserve HD-Rohr,Reserve HD-Rohr,,,images/hdreserve.jpg,Geräteraum 6,,images/GR6.jpg
+Löschdecke,Löschdecke,,,images/decke.jpg,Geräteraum 6,,images/GR6.jpg
+D - Zumischer,D - Zumischer,,,images/zumischer.jpg,Geräteraum 6,,images/GR6.jpg
+Schaumkanister,Schaumkanister,,,images/schaumkanister.jpg,Geräteraum 6,,images/GR6.jpg
+D - Schlauch Kupplung beidseitige Kupplung,D - Schlauch Kupplung beidseitige Kupplung,,,images/dschlauch.jpg,Geräteraum 6,,images/GR6.jpg
+D Schlauch einseitige Kupplung,D Schlauch einseitige Kupplung,,,images/dschlauchohnekupplung.JPEG,Geräteraum 6,,images/GR6.jpg
+H Druckschlauch,H Druckschlauch,,,images/hschlauch.jpg,Geräteraum 6,,images/GR6.jpg
+Chemie Schutzanzüge,Chemie Schutzanzüge,,,images/schutzanzug.JPEG,Geräteraum 6,,images/GR6.jpg
+A-B-C Kupplungsschlüssel,A-B-C Kupplungsschlüssel,,,images/abcschlüssel.JPEG,Geräteraum 7,,images/GR7.jpg
+Hydranten Ratschenschlüssel,Hydranten Ratschenschlüssel,,,images/hydrantenratsche.JPEG,Geräteraum 7,,images/GR7.jpg
+HD - Rohr Kupplungsschlüssel,HD - Rohr Kupplungsschlüssel,,,images/hdschlüssel.JPEG,Geräteraum 7,,images/GR7.jpg
+HD - Rohr Waschlanze,HD - Rohr Waschlanze,,,images/waschlanze.JPEG,Geräteraum 7,,images/GR7.jpg
