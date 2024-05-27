@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLF 3 Geräte</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
     <header>
         <h1>Geräte - HLF 3</h1>
@@ -27,7 +25,6 @@
             <tr>
                 <td>
                     <select id="filter" onchange="filterDevices()">
-                        <!-- Optionen für den Filter -->
                         <option value="all">Alle</option>
                         <option value="Geräteraum 1">Geräteraum 1</option>
                         <option value="Geräteraum 2">Geräteraum 2</option>
@@ -35,6 +32,7 @@
                         <option value="Geräteraum 4">Geräteraum 4</option>
                         <option value="Geräteraum 5">Geräteraum 5</option>
                         <option value="Geräteraum 6">Geräteraum 6</option>
+                        <option value="Geräteraum 7">Geräteraum 7</option>
                         <option value="Mannschaftsraum">Mannschaftsraum</option>
                         <option value="Dach">Dach</option>
                     </select>
@@ -48,7 +46,7 @@
             <tr>
                 <td>
                     <input class="search" type="text" id="search" oninput="searchDevices()" placeholder="Nach Gerätename suchen...">
-                </td>               
+                </td>
             </tr>
         </table>
         <div id="device-list" class="device-list">
@@ -56,11 +54,37 @@
         </div>
     </main>
     <script>
-        // Funktion zum Parsen der CSV-Datei
+        async function loadDevices() {
+            const response = await fetch('../csv/hlf3.csv');
+            const csvText = await response.text();
+            const devices = parseCSV(csvText);
+            const deviceList = document.getElementById('device-list');
+            devices.forEach((device, index) => {
+                if (device.Gerätename) {
+                    const card = document.createElement('a');
+                    card.classList.add('device-card');
+                    card.href = `../detail.html?name=${encodeURIComponent(device.Gerätename)}&index=${index}`;
+                    card.dataset.geräteraum = device.Geräteraum;
+                    card.innerHTML = `
+                        <h2>${device.Gerätename}</h2>
+                        <p class="device-longdesc">${device.Langbezeichnung}</p>
+                        <hr class="transparent-hr">
+                        <div class="device-image" style="background-image: url(${device.Bild ? '../' + device.Bild : '../images/nopic.svg'});"></div>
+                        <hr class="transparent-hr">
+                        <p class="device-details">${device.Geräteraum}</p>
+                    `;
+                    deviceList.appendChild(card);
+                }
+            });
+
+            // Speichern Sie die CSV-Daten im localStorage
+            localStorage.setItem('hlf3CSV', csvText);
+        }
+
         function parseCSV(text) {
             const lines = text.trim().split('\n');
             const headers = lines[0].split(',');
-            const devices = lines.slice(1).map(line => {
+            return lines.slice(1).map(line => {
                 const data = line.split(',');
                 let device = {};
                 headers.forEach((header, index) => {
@@ -68,45 +92,13 @@
                 });
                 return device;
             });
-            return devices;
         }
 
-        async function loadDevices() {
-            const response = await fetch('../csv/hlf3.csv');
-            const csvText = await response.text(); // Hier bekommst du die CSV-Daten
-            const devices = parseCSV(csvText);
-            const deviceList = document.getElementById('device-list');
-            devices.forEach(device => {
-                if (device.Gerätename) { // Sicherstellen, dass Zeile nicht leer ist
-                    const card = document.createElement('a');
-                    card.classList.add('device-card');
-                    card.href = `../detail.html?name=${encodeURIComponent(device.Gerätename)}&csv=${encodeURIComponent(csvText)}`;
-                    const geräteraum = device.Geräteraum; // Geräteraum-Wert für diese Kachel
-                    card.dataset.geräteraum = geräteraum; // Dataset für Geräteraum
-                    card.innerHTML = `
-            <h2>${device.Gerätename}</h2>
-            <p class="device-longdesc">${device.Langbezeichnung}</p>
-            <p class="device-details">${device.Details}</p>
-            <div class="device-image" style="background-image: url(${device.Bild ? '../' + device.Bild : '../images/nopic.svg'});"></div>
-                    <hr>
-            <p class="device-details">${device.Geräteraum}</p>
-            `;
-                    deviceList.appendChild(card);
-                }
-            });
-        }
-
-
-
-
-
-
-        // Funktion zum Filtern der Geräte nach Geräteraum
         function filterDevices() {
             const filterValue = document.getElementById('filter').value;
             const devices = document.querySelectorAll('.device-card');
             devices.forEach(device => {
-                const geräteraumValues = device.dataset.geräteraum.split(','); // Extrahieren der Geräteraum-Werte
+                const geräteraumValues = device.dataset.geräteraum.split(',');
                 if (filterValue === 'all' || geräteraumValues.includes(filterValue)) {
                     device.style.display = 'block';
                 } else {
@@ -115,7 +107,6 @@
             });
         }
 
-        // Funktion zum Suchen von Geräten nach Gerätename oder Langbezeichnung
         function searchDevices() {
             const searchValue = document.getElementById('search').value.toLowerCase();
             const devices = document.querySelectorAll('.device-card');
@@ -130,12 +121,9 @@
             });
         }
 
-        // Geräte beim Laden der Seite laden und initialen Filter anwenden
         window.onload = function () {
             loadDevices();
-            filterDevices();
         };
     </script>
 </body>
-
 </html>
